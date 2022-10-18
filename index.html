@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="secondproject.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Merienda:wght@700&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+    <title>Second Project "Form"</title>
+</head>
+<body>
+    <div id="maindiv">
+        <form action="#">
+            <span>
+            <h1>Form</h1>
+            </span>
+            <hr>
+            <br>
+            <label for="firstname">First Name : </label>
+            <input type="text" name="firstname" id="firstname" pattern="[\w]{3,15}"  title="First name should be 3 to 10 characters long and only letters and digits are allowed" required>
+            <br>
+            <label for="lastname">Last Name : </label>
+            <input type="text" name="lastname" id="lastname" pattern="[\w]{3,15}" title="Last name should be 3 to 10 characters long and only letters and digits are allowed"required>
+            <br>
+
+            <label for="pass">Password : </label>
+            <input type="password" id="pass" name="password" pattern="(?=.*[\d])(?=.*[A-Z])(?=.*[a-z]).{8,}" title="Password must contain atleast one uppercase letter,one lowercase letter and one digit.No special characters are allowed.
+            And the minimum size of password is 8" required>
+            <br>
+
+            <label for="email">Email : </label>
+            <input type="email" name="email" id="email" pattern="[A-Za-z0-9]+@[a-z]+\.[a-z]{2,}" title="Example : example123@example.com" required>
+            <br>
+
+            <label for="send">Choose a color : </label>
+            <input type="color" name="color" id="send" oninput="colorresult.value = send.value">
+            <input type="text" id="colorresult">
+            <br>
+
+            <label for="date">Date : </label>
+            <input type="date" name="date" id="date" oninput="dateresult.value=date.value">
+            <input type="text" id="dateresult" class="result">
+            <br>
+
+            <label for="month">Month : </label>
+            <input type="month" name="month" id="month" oninput="monthresult.value = month.value ">
+            <input type="text" id="monthresult" class="result"> 
+            <br>
+
+            <label for="week">Week : </label>
+            <input type="week" name="week" id="week" oninput="weekresult.value = week.value ">
+            <input type="text" id="weekresult" class="result">
+            <br>          
+            
+            <label for="time">Time : </label>
+            <input type="time" name="time" id="time" oninput="timeresult.value = time.value">
+            <input type="text" id="timeresult" class="result">
+            <br>
+
+            <label for="contact">Contact No. : </label>
+            <input type="tel" name="contact" id="contact" pattern="\+?[0-9]{1,2}-[0-9]{9,11}" title="example : +91-3402215482 , 1-3402215482" required>
+            <br>
+
+            <label for="number">Number : </label>
+            <input type="number" name="number" class="number">
+            <br>
+            
+            <label for="search">Search : </label>
+            <input type="search" name="search" id="search" pattern="[A-Za-z0-9]+">
+            <br> 
+
+            <label for="url">Url : </label>
+            <input type="url" name="url" id="url" pattern="https?://.+" > 
+            <br>
+
+            <label for="range">Range : </label>
+            <input type="range" name="range" min="0" max="100" id="range" oninput="rangeresult.value=range.value">
+            <input type="text" id="rangeresult">  
+            <br>
+
+            <label for="datetime">DateTime : </label>
+            <input type="datetime-local" id="datetime" name="datetime" oninput="datetimeresult.value=datetime.value">
+            <input type="text" id="datetimeresult">
+            <br>
+ 
+            <label for="file">File : </label>
+            <input type="file" name="file" id="file" value="Submit file(s)" accept="image/*"> 
+            <br><br>
+            <hr>
+            <div class="submitdiv">
+                <div class="submittextdiv"> Submit : </div>
+             <div class="submitimgdiv"><input type="submit" name="submit" value="Submit"></div>
+             <div class="resettextdiv">Reset : </div>
+             <div><input type="reset" name="reset" value="Reset">
+            </div>
+            
+
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,90 @@
+body {
+    background-image: url("background2.jpg");
+    background-repeat: repeat;
+    background-size: 100%;
+    font-family: 'Merienda', 'cursive';
+    color: white;
+}
+    hr {
+        width: 85%;
+    }
+ span {
+    font-family: 'Rubik Moonrocks','cursive';
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 3px;
+ }
+#maindiv {
+    border: 1px solid rgba(0, 0, 255, 0.555);
+    box-shadow: 0px 0px 20px rgba(0, 0, 255, 0.356);
+    height: 1070px;
+    width: 620px;
+    margin: 50px auto auto auto;
+    background-color: rgba(0, 0, 255, 0.24);
+    padding: 20px;
+    border-radius: 20px;
+}
+#maindiv:hover {
+    box-shadow: 0px 0px 20px white;
+}
+input {
+    background: transparent;
+    border-radius: 30px;
+    height: 25px;
+    box-shadow: 0px 0px 5px white;
+    color: white;
+    text-align: center;
+}
+label,input {
+    margin: 10px;
+    margin-left: 30px;
+}
+input[type="image"] {
+    height: 50px;
+    margin-left: 35px;
+    padding-top: 15px;
+}
+
+.submitdiv {
+    display: flex;
+}
+.submittextdiv {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+div>input[type="submit"] {
+    margin-left: 105px;
+    margin-top: 25px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    background-color: rgba(45, 182, 45, 0.445);
+    position: absolute;
+    box-shadow: 0px 0px 5px 1px white;
+    cursor: pointer;
+}
+div>input[type="submit"]:hover {
+    background-color: rgb(2, 48, 2);
+    box-shadow: 0px 0px 7px 2px white; 
+}
+div>input[type="reset"] {
+    margin-left: 265px;
+    margin-top: 25px;
+    background-color: rgba(204, 20, 20, 0.568);
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    color: azure;
+    box-shadow: 0px 0px 5px 1px white;
+    cursor: pointer;
+}
+div>input[type="reset"]:hover {
+    background-color: rgb(80, 7, 7);
+    box-shadow: 0px 0px 7px 2px white;
+}
+.resettextdiv {
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 40px;
+}
